@@ -29,7 +29,7 @@ public class RPCServer {
 
         while (true) {
             Socket socket = serverSocket.accept();
-            System.out.println(socket.getInetAddress() + "connected");
+            System.out.println(socket.getInetAddress() + "---connected");
             InputStream inputStream = socket.getInputStream();
             byte[] buf = new byte[1024];
             inputStream.read(buf);
